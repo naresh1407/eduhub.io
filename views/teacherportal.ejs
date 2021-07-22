@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body>
+  <div class="fullbody">
+    <div class="nav">
+      <div class="left">
+        
+        <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">First Year Students</a>
+    <a href="#">Second Year Students</a>
+    <a href="#">Third Year Students</a>
+    <a href="#">Fourth Year Students</a>
+    
+  </div>
+ </div>
+      </div>
+      <div class="right">
+        <h1>Teacher portal</h1>
+      </div>
+    </div>
+  </div>
+  <div class="portal">
+  <div class="firstsection">
+      
+     <div class="allign">
+      <div class="part"><h4>Day1</h4></div>
+      <div class="part"><h4>Day2</h4></div>
+      <div class="part"><h4>Day3</h4></div>
+      <div class="part"><h4>Day4</h4></div>
+    </div>
+    <div class="allign">
+      <div class="part"><h4>Day5</h4></div>
+      <div class="part"><h4>Day6</h4></div>
+      <div class="part"><h4>Day7</h4></div>
+      <div class="part"><h4>Day8</h4></div>
+    </div>
+    <div class="allign">
+      <div class="part"><h4>Day9</h4></div>
+      <div class="part"><h4>Day10</h4></div>
+      <div class="part"><h4>Day11</h4></div>
+      <div class="part"><h4>Day12</h4></div>
+    </div>
+    <div class="allign">
+      <div class="part"><h4>Day13</h4></div>
+      <div class="part"><h4>Day14</h4></div>
+      <div class="part"><h4>Day15</h4></div>
+      <div class="part"><h4>Day16</h4></div>
+    </div>
+  
+  </div>
+  <div class="secondsection">
+    <div class="allign1">
+      <div class="part1"><h4>Courses</h4></div>
+      <div class="part1"><h4>Batches</h4></div>
+      <div class="part1"><h4>Embed Contant</h4></div>
+      <div class="part1"><h4>Calander</h4></div>
+      <div class="part1"><h4>To-do</h4></div>
+      <div class="part1"><h4>To-do</h4></div>
+      <div class="part1"><h4>To-do</h4></div>
+    </div>
+    <div class="allign2">
+      <div class="part2"><h4>Latest Update</h4></div>
+      <div class="part2"><h4>TA Contacts</h4></div>
+      
+    </div>
+  </div>
+  </div>
+  <div class="portal2">
+   <h1><br>Create Assignments</h1> 
+   <div class=" part4">
+      <h2>Embed Notes </h2>
+      <div class="rascal">
+        <button>Upload<i class="fas fa-user-plus"></i></button>
+      </div>
+   </div>
+   <div class="part6">
+      <h2>Embed Lectures </h2>
+      <div class="rascal">
+        <button>Upload<i class="fas fa-user-plus"></i></button>
+      </div>
+   </div >
+  </div>
+</body>
+<style >
+  body{
+  font-family: 'Lato', sans-serif;
+   height: 200vh;
+}
+.rascal{
+  margin-top: 20vh;
+  margin-left: 10vw;
+}
+.rascal button{
+width: 20vw;
+height: 10vh;
+font-size: 1.5vw;
+}
+.part4{
+width: 50%;
+float: left;
+
+}
+.part6{
+width:50%;
+float: right;
+
+}
+.portal{
+  width:100vw;
+}
+.portal2{
+  height: 75vh;
+  width: 91vw;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -o-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  margin-top: 100vh;
+  margin-left: 5vw;
+  
+
+}
+.part4 h2,.part6 h2{
+text-align: center;
+border-bottom: 1px solid gray;
+width:30vw;
+margin-left: 4vw;
+color: violet;
+}
+.portal2 h1{
+  margin-left: 35vw;
+}
+
+
+.allign{
+display: flex;
+  flex-direction: row;
+margin-left: 1vw;
+}
+.allign1{
+display: flex;
+  flex-direction:column;
+float: left;
+width: 50%;
+margin-top: 5vh;
+}
+.allign2{
+  margin-top: 5vh;
+  display: flex;
+  flex-direction:column;
+float: right;
+width: 50%;
+
+}
+
+.part1{
+   width:12vw;
+  height:8vh;
+   background-color: white;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -o-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.part2{
+   width:22vw;
+  height:25vh;
+   background-color: white;
+    margin-top: 5vh;
+    margin-left: 1vw;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -o-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.part{
+  text-align: center;
+  width:7.5vw;
+  height:14vh;
+  background-color: white;
+  margin-left: 0.6vw;
+  margin-top: 5vh;
+   box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+   -o-box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.part h4{
+  margin-top: 5vh;
+}
+.part:hover,.part1:hover{
+ background-color:  #F5F5F5;
+}
+.right h1{
+  color: white;
+  margin-left: -10vw;
+  margin-top: 3vh;
+}
+.left{
+  float: left;
+  width: 50%;
+ 
+}
+.right{
+  float: right;
+  width: 50%;
+}
+.firstsection{
+  height: 82vh;
+  width:35vw;
+  background-color: lightgrey;
+ margin-top: 10vh;
+  margin-left: 5vw;
+  float: left;
+}
+.secondsection{
+  width: 50vw;
+  height: 82vh;
+  background-color: lightgrey;
+  margin-top: 10vh;
+  float: right;
+ margin-right: 4vw;
+}
+.nav{
+  width:97.5vw;
+  height: 15vh;
+  background-color:#A9A9A9;
+}
+.fas{
+  color: black;
+}
+.dropbtn {
+  background-color: white;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown {
+  margin-top: 3.5vh;
+  position: relative;
+  display: inline-block;
+  margin-left: 2vw;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</html>
