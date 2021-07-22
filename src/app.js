@@ -59,7 +59,7 @@ app.post("/signup",async(req,res)=>{
   }
   catch(error){
    res.status(400).send(error);
-  }
+  } 
 });
 
 app.post("/login",async(req,res)=>{
@@ -67,13 +67,31 @@ app.post("/login",async(req,res)=>{
    const email =req.body.email;
    const password=req.body.password;
    const useremail=await Register.findOne({email:email});
-   const isMatch =await bcrypt.compare(password,useremail.password);//
-   if(isMatch){
-       res.status(201).render("studentportal");
-   }else{
-       res.send("invalid datas");
-   }
+   
+  if(useremail.password=== password){
+            res.status(201).render("studentportal");
+        }else{
+            res.send("invalid datas");
+        }
+       }
+
+  catch(error){
+   res.status(400).send(error); 
   }
+});
+
+app.post("/teacherlogin",async(req,res)=>{
+  try{
+   const email =req.body.email;
+   const password=req.body.password;
+   const useremail=await Register.findOne({email:email});
+   
+  if(useremail.password=== password){
+            res.status(201).render("teacherportal");
+        }else{
+            res.send("invalid datas");
+        }
+       }
 
   catch(error){
    res.status(400).send(error); 

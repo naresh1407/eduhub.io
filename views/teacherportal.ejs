@@ -91,18 +91,30 @@ window.onclick = function(event) {
     </div>
   </div>
   </div>
-  <div class="portal2">
-   <h1><br>Create Assignments</h1> 
+  <div class="portal2"><br>
+   <h1>Create Assignments</h1> 
    <div class=" part4">
       <h2>Embed Notes </h2>
-      <div class="rascal">
-        <button>Upload<i class="fas fa-user-plus"></i></button>
+      <div class="rascal"> 
+        <form action="#" method="POST" >
+          <div class="rs1"><input type="file" name="filename" accept="file_extension|video/*|media_type"></div>
+          <div class="rs2"><i class="fas fa-user-plus"></i><input type="submit"  value="Upload"></div> 
+        </form>
       </div>
+
+      <!-- <form action="/action_page.php" >
+        <input type="file" id="myFile" name="filename">
+        <input type="submit"  value="Upload">
+      </form> -->
+
    </div>
    <div class="part6">
       <h2>Embed Lectures </h2>
-      <div class="rascal">
-        <button>Upload<i class="fas fa-user-plus"></i></button>
+      <div class="rascal"> 
+        <form action="#" method="POST" >
+          <div class="rs1"><input type="file" name="filename"></div>
+          <div class="rs2"><i class="fas fa-user-plus"></i><input type="submit"  value="Upload"></div> 
+        </form>
       </div>
    </div >
   </div>
@@ -115,11 +127,35 @@ window.onclick = function(event) {
 .rascal{
   margin-top: 20vh;
   margin-left: 10vw;
+  font-size: .7rem;
 }
-.rascal button{
-width: 20vw;
-height: 10vh;
-font-size: 1.5vw;
+
+.rs1,.rs2{
+  float:left;
+  margin-right: 10px;
+}
+.rascal i{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+.rs1 input {
+width: 200px;
+height: 30px;
+
+}
+.portal2 h1{
+height: 50px;
+width:280px;
+border-bottom:5px solid gray
+}
+h2,h1 {
+  background-color: #EEEEEE;
+}
+.rs2 input {
+width: 150px;
+height: 30px;
+
 }
 .part4{
 width: 50%;
@@ -143,15 +179,15 @@ float: right;
    -o-box-shadow: 0 0 10px rgba(0,0,0,0.8);
   margin-top: 100vh;
   margin-left: 5vw;
-  
-
+  background-color: #E1E5EA;
 }
 .part4 h2,.part6 h2{
 text-align: center;
-border-bottom: 1px solid gray;
-width:30vw;
-margin-left: 4vw;
-color: violet;
+border-bottom: 5px solid gray;
+width:25vw;
+margin-left: 8vw;
+color: Black;
+font-weight: bold;
 }
 .portal2 h1{
   margin-left: 35vw;
@@ -178,7 +214,9 @@ float: right;
 width: 50%;
 
 }
-
+.right h1{
+  background: none;
+}
 .part1{
    width:12vw;
   height:8vh;
