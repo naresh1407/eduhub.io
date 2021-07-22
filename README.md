@@ -1,6 +1,6 @@
 # eduhub.io
 
-The current project aids the teachers, professors and course instructors to curate customised courses for their students. It helps students achieve transparent grading and flexibility to the students. 
+The current project aids the teachers, professors and course instructors to curate customised courses for their students. It helps students achieve transparent grading and flexibility in the curriculums. 
 
 The platform has been segregate into three different portals: 
 **Students:** 
