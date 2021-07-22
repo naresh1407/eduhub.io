@@ -11,4 +11,4 @@ The platform allows the students to be part of the courses which are highly stru
 The teachers can fix a course duration for the course and upload the course contents for day-wise. It provides embedding notes, uploading lectures, creating quizzes and posting references functionalities to them. The students are auto-graded based upon their daily accomplishments. 
 
 **Administration:** 
-This section helps students convey the institute information, academic updates and scholarship opportunities. 
+This section helps the administration convey the institute information, important academic updates and scholarship opportunities. 
